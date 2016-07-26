@@ -1,0 +1,57 @@
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> ACM India</title>
+        <link rel="stylesheet" href="reg.css">
+    </head>
+    <body>
+
+      <form action="index.html" method="post">
+       
+	    <img id="logo" align="middle" src="acm_logo_tablet.png" alt="ACM Registration">
+        <h1>ACM Registration</h1>
+        
+        <fieldset>
+        
+		  
+          <label>Name:</label>
+          <input type="text" id="name" name="user_name" required >
+          
+		  <label>Contact:</label>
+          <input type="tel" id="contact" name="user_contact" required>
+		  
+          <label>Email:</label>
+          <input type="email" id="mail" name="user_email" required >
+          
+		  <label>Branch:</label>
+		  <select required>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Information Technology">Information Technology</option>
+          <option value="Electronics and Telecommunications">Electronics and Telecommunications</option>
+          <option value="Mechanical">Mechanical</option>
+          </select>
+
+         <label>Year:</label>
+          <select required>
+          <option value="First Year">First Year</option>
+          <option value="Second Year">Second Year</option>
+          </select>
+
+		  
+          <label>Registration Period: (1 to 4)</label>
+          <input type="range" min="1" max="4" id="period" name="user_period" required>
+          
+		  <br>
+		<br>
+		
+          <label>Team:</label>
+          <input type="radio" id="adt" value="ADT" name="user_team" required><label class="light">ADT</label><br>
+          <input type="radio" id="publicity" value="Publicity" name="user_team" required><label class="light">Publicity</label><br>
+          <input type="radio" id="design" value="Design" name="user_team" required><label class="light">Design</label>           
+		</fieldset>
+        
+        <button type="submit">Register</button>
+      </form>
+      
+    </body>
+</html>
